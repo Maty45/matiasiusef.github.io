@@ -95,6 +95,9 @@
     display: block;
     margin: 0 auto 10px; 
   }
+  .project-box:hover .title-animation{
+    animation: fading 0.9s ease-in-out infinite ;
+  }
   @keyframes fading {
     0%{
       color: #0077b6;
