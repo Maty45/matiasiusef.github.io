@@ -1,11 +1,5 @@
-@media (max-width:400px) {
-    .contact ul{
-      flex-direction: column;
-      align-items:center;
-    }
-    nav {
-      position: static;
-    }
+  html {
+    scroll-behavior: smooth;
   }
   body{
     font-family: Exo, sans-serif;
@@ -25,6 +19,7 @@
     height:3.5rem;
     position: fixed;
     border-bottom: 2px solid white;
+    z-index: 2;
   }
   nav ul{
     list-style-type: none;
@@ -33,11 +28,13 @@
     height: 100%;
     width:100%;
     display:flex;
-    justify-content:center;
+    justify-content:space-evenly;
     align-items:center;
     gap:20px;
   }
   nav li{
+    margin-left: -10px;
+    margin-right: -10px;
     color: white;
   }
   nav a:hover{
@@ -97,6 +94,9 @@
   }
   .project-box:hover .title-animation{
     animation: fading 0.9s ease-in-out infinite ;
+  }
+  .cafeterias {
+    margin-top: 30px ;
   }
   @keyframes fading {
     0%{
@@ -173,15 +173,18 @@
   }
   .lenguajes {
     display:flex;
+    flex-wrap: wrap;
     font-size: 20px;
     margin: 4px auto 5px auto;
-    gap: 32px;
+    gap: 10px;
   }
   .lenguajes h5{
     color: #161a1d;
     border: 3px solid #eddea4;
     border-radius: 10px;
     padding:5px;
+    margin-right: 10px;
+    margin-left: 10px;
   }
   .lenguajes a{
     color:#161a1d;
@@ -239,5 +242,16 @@
     }
     100% {
       transform: translateX(0);
+    }
+  }
+  @media (max-width: 800px) {
+    .project-tile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    nav {
+      position: static;
     }
   }

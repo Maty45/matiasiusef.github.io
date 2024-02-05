@@ -2,12 +2,13 @@
 <html lang="es-ES">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=width-device, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/dcdc1f1f82.js" crossorigin="anonymous"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Matias Iusef Portfolio</title>
   </head>
   <body>
@@ -26,26 +27,18 @@
     </section>
     <section id="projects" class="proyectos">
       <p>Éstos son algunos de mis proyectos</p>
-      <div class="project-tile">
-        <div class="project-box">
+      <div class="project-tile" >
+        <div class="project-box" id="#primer-proyecto" data-aos="fade-right">
           <a class="foto-proyecto" href="https://codepen.io/Matias-Iusef/full/mdvPwrB" target="_blank"><img src="plp.png"></a>
           <p class="title-animation"><a id="profile-link" href="https://codepen.io/Matias-Iusef/full/mdvPwrB" target="_blank">Product Landing Page</a></p>
         </div>
-        <div class="project-box">
-          <a class="foto-proyecto"><img src="tu_otra_imagen.png" id="otra_imagen"></a>
-          <p class="title-animation">Ejemplo 1</p>
-        </div>
-        <div class="project-box">
-          <a class="foto-proyecto"><img src="otra_imagen.png" id="otra_imagen2"></a>
-          <p class="title-animation">Ejemplo 2</p>
-        </div>
-        <div class="project-box">
-          <a class="foto-proyecto"><img src="otra_imagen3.png" id="otra_imagen3"></a>
-          <p class="title-animation">Ejemplo 3</p>
+        <div class="project-box cafeterias" id="#segundo-proyecto" data-aos="fade-left">
+          <a class="foto-proyecto" href="https://maty45.github.io/cafeterias/" target="_blank" ><img src="cafeterias.png" id="cafeterias"></a>
+          <p class="title-animation"><a id="profile-link" href="https://maty45.github.io/cafeterias/" target="_blank">New Cafe App</a></p>
         </div>
       </div>
       </section>
-    <section id="about" class="sobremi">
+    <section id="about" class="sobremi" data-aos="flip-left">
       <h2>Acerca de mi</h2>
       <div class="foto">
         <img src="foto_perfil.jpg" alt="foto-perfil" id="foto-perfil" loading="lazy">
@@ -55,20 +48,20 @@
         <li><i class="fa-solid fa-hands-holding-circle" style="margin-right: 20px;"></i> Adaptativo</li>
         <li><i class="fa-regular fa-thumbs-up" style="margin-right: 20px;"></i> Responsable</li>
       </ul>
-      <p>Nací en Mendoza, Argentina. A la par que desarrollo mis habilidades en <a target="_blank" href="https://www.freecodecamp.org/">freeCodeCamp</a> estudio Ingenieria en Sistemas de la Información en la Universidad Tecnológica Nacional FRM. Mi objetivo es desarrollarme como programador mientras termino mis estudios.</p>
+      <p>Nací en Mendoza, Argentina. A la par que desarrollo mis habilidades tanto en <a target="_blank" href="https://www.freecodecamp.org/">freeCodeCamp</a> como por cuenta propia, estudio Ingenieria en Sistemas de la Información en la Universidad Tecnológica Nacional FRM. Mi objetivo es desarrollarme como programador mientras termino mis estudios.</p>
       <p>Poseo conocimiento en:</p>
       <div class="lenguajes">
         <h5><a target="_blank" href="https://www.freecodecamp.org/certification/matt_iusepe/responsive-web-design">HTML</a></h5>
         <h5><a target="_blank" href="https://www.freecodecamp.org/certification/matt_iusepe/responsive-web-design">CSS</a></h5>
         <h5>Enterprise Architect</h5>
         <h5><a target="_blank" href="https://www.freecodecamp.org/certification/matt_iusepe/javascript-algorithms-and-data-structures">JavaScript</a></h5>
+        <h5>React</h5>
       </div>
     </section>
-    <section class="contact" id="contacto">
+    <section class="contact" id="contacto" data-aos="fade-up" data-aos-delay="100" >
       <h2>¡Trabajemos juntos!</h2>
       <p>Estas son mis redes</p>
       <ul class="redes">
-        <li><a href="https://api.whatsapp.com/send?phone=5492615968576" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
         <li><a href="https://codepen.io/Matias-Iusef" target="_blank"><i class="fa-brands fa-codepen"></i></a></li>
         <li><a target="_blank" href="https://github.com/Maty45"><i class="fa-brands fa-github"></i></a></li>
         <li><a href="mailto:matyiusef45@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a></li>
@@ -77,5 +70,9 @@
     <footer>
       <p>¡Gracias por leerme!</p>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
