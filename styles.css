@@ -114,6 +114,7 @@
     flex-direction: column;
     margin: 150px auto 20px auto;
     width: 80%;
+    min-height: auto;
     color: black;
     text-align: left;
     border: 1px solid black;
@@ -173,18 +174,19 @@
   }
   .lenguajes {
     display:flex;
+    justify-content: center;
     flex-wrap: wrap;
     font-size: 20px;
-    margin: 4px auto 5px auto;
-    gap: 10px;
+    margin: 4px 0 5px 0;
+    padding-bottom: 20px;
+    padding-top: 20px;
   }
   .lenguajes h5{
     color: #161a1d;
     border: 3px solid #eddea4;
     border-radius: 10px;
     padding:5px;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin: 8px 10px ;
   }
   .lenguajes a{
     color:#161a1d;
@@ -253,5 +255,13 @@
     }
     nav {
       position: static;
+    }
+  }
+  @media (max-width: 450px) {
+    #foto-perfil {
+      width: 250px;
+    }
+    .sobremi > p:first-of-type {
+      border-radius: 16px;
     }
   }
